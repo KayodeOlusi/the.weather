@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #A9A9A9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar h5{
+  color: #393018;
+  font-size: 18px;
+  font-weight: bolder !important;
+}
+
+.navbar h5:hover{
+  cursor: pointer;
+}
+
+.landing-image{
+  height: 500px !important;
+}
+
+.home h4 {
+  color: #eae2ce;
+}
+
+.home button{
+  background-color: #bba362;
+  color: #00001a;
+  font-weight: bold;
+  transition: all 0.2s ease-in !important;
+}
+
+.home button:hover {
+  transform: scale(1.09);
+}
+
+input {
+  padding: 6px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  border: 0.5px solid #393018;
+  border-radius: 2px !important;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: #A9A9A9;
+}
+
+input:focus{
+  outline: none !important;
+  border-color: #393018 !important;
+  box-shadow: 0px 0px 2px #393018 ;
+}
+
+.search-button {
+  background-color: #bba362;
+  color: #00001a;
+  font-weight: bold;
+}
+
+.Search-image{
+  width: 230px !important;
+  height: 230px !important;
+}
+
+.middle{
+    padding: 100px 0px !important;
+    border-radius: 15px !important;
+    border-color: none !important;
+    box-shadow: 0px 0px 3px #bba362;
+}
+
+.weather-information{
+    border-color: none !important;
+    box-shadow: 0px 0px 10px #e5dbc3;
+    border-radius: 15px !important;
+    transition: all 0.2s ease-in !important;
+}
+
+.weather-information:hover {
+    transform: scale(1.05) !important;
+}
+
+.lead{
+  font-weight: bold !important;
+}
+
+i .bi-cloud{
+  font-size: 100px !important;
+}
+
+ .landing-text h4{
+    font-size: 18px !important;
+    color: #eae2ce;
+}
+
+@media (max-width:400px) {
+  .landing-image{
+    height: 320px !important;
+    width: 200px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .home button{
+   font-size: 12px;
+   padding: 0px 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .weather-information{
+   margin-bottom: 5px;
+}
+
+.landing-text h4{
+  font-size: 12px !important;
+}
+
+}
+
+@media (max-width:768px) {
+  .landing-image{
+    height: 400px !important;
+    width: 250px;
   }
+
+  .weather-information{
+    margin-bottom: 5px;
+ }
+ 
+ .landing-text h4{
+  font-size: 14px !important;
+}
+
 }
