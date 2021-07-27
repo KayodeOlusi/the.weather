@@ -6,8 +6,8 @@ const Home = () => {
         <div className="wrapper">
             <div className="home d-flex justify-content-center align-items-center">
                 <div className="row container">
-                    <div className="col-lg-6 col-md-6 col-sm-12 text-center mt-3">
-                        <img className="landing-image img-responsive" src={landingimage} alt="hi" />
+                    <div className="col-lg-6 col-md-6 col-sm-12 text-center mt-3 pr-2">
+                        <img className="landing-image img-responsive" src={landingimage} alt="" />
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 d-flex mt-3 justify-content-center align-items-center text-center landing-page-texts">
                         <div>

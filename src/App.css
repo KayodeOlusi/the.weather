@@ -23,6 +23,7 @@ body{
 
 .landing-image{
   height: 500px !important;
+  width: 350px;
 }
 
 .home h4 {
