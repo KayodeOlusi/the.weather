@@ -7,9 +7,9 @@ const Home = () => {
             <div className="home d-flex justify-content-center align-items-center">
                 <div className="row container">
                     <div className="col-lg-6 col-md-6 col-sm-12 text-center mt-3">
-                        <img className="landing-image" src={landingimage} alt="hi" />
+                        <img className="landing-image img-responsive" src={landingimage} alt="hi" />
                     </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12 d-flex mt-3 justify-content-center align-items-center text-center">
+                    <div className="col-lg-6 col-md-6 col-sm-12 d-flex mt-3 justify-content-center align-items-center text-center landing-page-texts">
                         <div>
                             <h4>Welcome!</h4>
                             <Link to="/search">

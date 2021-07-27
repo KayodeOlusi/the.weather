@@ -1,8 +1,4 @@
-import weather from '../Assets/weather.svg';
-import Search from './Search';
-
-
-const Weather = ( { data, isPending, input } ) => {
+const Weather = ( { data } ) => {
 
     return ( 
         <div className="city-weather-page">

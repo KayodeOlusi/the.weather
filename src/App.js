@@ -3,7 +3,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Search from './components/Search';
-import Weather from './components/Weather';
+
 
 function App() {
   return (

@@ -14,18 +14,19 @@ const Search = () => {
 
     const handleClick = (e) => {
         e.preventDefault();
+        setIsPending(true)
         fetch(the_api)
         .then( (res) => {
             if (!res.ok) {
-                throw Error('Cannot get information from this website')
+                throw Error(`Oops...can't access weather data for this city...try checking for another city`)
             }else{
                 return res.json()
             }
         })
         .then( (data) => {
-            setData(data)
-            setError(null)
             setIsPending(false)
+            setError(null)
+            setData(data)
             console.log(data)
         })
         .catch( (error) => {
@@ -54,8 +55,9 @@ const Search = () => {
                         </div>         
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 mt-3">
+                            { error && <div> { error } </div>}
                             {isPending && <div>Loading...</div>}
-                            {data && <Weather input={input} data={data} /> }
+                            {data && <Weather data={data} /> }
                     </div>
                 </div>
             </div>

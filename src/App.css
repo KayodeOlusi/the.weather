@@ -102,6 +102,7 @@ i .bi-cloud{
 }
 
 @media (max-width:400px) {
+
   .landing-image{
     height: 320px !important;
     width: 200px;
@@ -120,9 +121,10 @@ i .bi-cloud{
   font-size: 12px !important;
 }
 
-}
+} 
 
 @media (max-width:768px) {
+
   .landing-image{
     height: 400px !important;
     width: 250px;

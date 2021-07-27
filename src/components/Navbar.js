@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useHistory } from 'react-router-dom';
 
 const Navbar = () => {
@@ -8,7 +7,6 @@ const Navbar = () => {
         let path = '/'
         history.push(path)
     }
-
 
     return (
             <div className="navbar text-left py-3 px-3">
