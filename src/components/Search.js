@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import search from '../Assets/search.svg'
 import Weather from './Weather';
+import { WeatherContext } from '../contexts/WeatherContext'
 
 
 const Search = () => {
@@ -11,6 +12,14 @@ const Search = () => {
     const [input, setInput] = useState('');
     const key = 'b881663edbd92cf6c5488d9a8ae86edb';
     var the_api = `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${key}`
+
+    // Use the useContext hook
+    // const weather = useContext(WeatherContext)
+    const { weatherValue } = useContext(WeatherContext)
+    useEffect(() => {
+        // console.log weather value
+        console.log('weather value', weatherValue)
+    }, [weatherValue])
 
     const handleClick = (e) => {
         e.preventDefault();
